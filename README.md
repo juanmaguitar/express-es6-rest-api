@@ -17,8 +17,8 @@ Getting Started
 
 ```sh
 # clone it
-git clone git@github.com:developit/express-es6-rest-api.git
-cd express-es6-rest-api
+git clone git@github.com:developit/express-es6-rest-api.git myEs2015Project
+cd myEs2015Project
 
 # Make it your own
 rm -rf .git && git init && npm init
