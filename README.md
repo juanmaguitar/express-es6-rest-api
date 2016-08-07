@@ -17,11 +17,10 @@ Getting Started
 
 ```sh
 # clone it
-git clone git@github.com:developit/express-es6-rest-api.git myEs2015Project
-cd myEs2015Project
+git clone git@github.com:developit/express-es6-rest-api.git myEs2015Project && cd myEs2015Project
 
 # Make it your own
-rm -rf .git && git init && npm init
+rm -rf .git && git init && npm init -y
 
 # Install dependencies
 npm install
@@ -119,3 +118,14 @@ To see what's going on the remote server
     2016-08-05T07:52:32.036514+00:00 heroku[router]: at=info method=GET path="/api/search/beers?q=ipa" host=quiet-inlet-67115.herokuapp.com request_id=0f5fbc67-e83b-469b-9736-2547979d124d fwd="80.33.152.186" dyno=web.1 connect=0ms service=570ms status=200 bytes=114341
     ...
 
+## Troubleshooting
+
+If you get error...
+
+    ERROR in Cannot find module '../modules/web.dom.iterable'
+
+You can try to do
+
+    rm -rf node_modules && npm install
+
+> Source: [curtismlarson.com](http://www.curtismlarson.com/blog/2016/05/12/webpack-cannot-find-module-web-dom-iterable/)
